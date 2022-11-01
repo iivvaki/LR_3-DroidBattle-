@@ -1,7 +1,6 @@
-package Battle;
-import Battle.DroidBattle;
+package battle;
 
-import Item.Item;
+import item.Item;
 import com.droid.Droid;
 
 import java.util.Random;
@@ -25,7 +24,7 @@ public class BattleArea {
         this.item2 = item2;
     }
 
-    private void printInfoItem1(){
+    private void printInfoItem(Item item1, Item item2){
         System.out.println(attacker.getName() + " have boost damage:"
                 + item1.getDamage() + ", health: " + item1.getHealth() +", protect: "+item1.getProtect() + "\n"
                 +"Damage now: " + attacker.getDamage() +" + " + item1.getDamage()
@@ -36,18 +35,8 @@ public class BattleArea {
                 +"Health now: " + defender.getHealth()+"(+" + item2.getHealth() + ")"
                 + ", protect percent: " + defender.getPercent() + " + "+item2.addPercentProtect() + "\n");
     }
-    private void printInfoItem2(){
-        System.out.println(attacker.getName() + " have boost damage:"
-                + item2.getDamage() + ", health: " + item2.getHealth() +", protect: "+item2.getProtect() + "\n"
-                +"Damage now: " + attacker.getDamage() +" + " + item2.getDamage()
-                + ", health: " + attacker.getHealth() +"(+"+item2.getHealth() + ")\n");
 
-        System.out.println(defender.getName() + " have boost health:" + item1.getHealth() +
-                ", protect: "+item1.getProtect() + "\n"
-                +"Health now: " + defender.getHealth() + "(+" + item1.getHealth() + ")"
-                + ", protect percent: " + defender.getPercent() + " + "+item1.addPercentProtect() + "\n");
-    }
-    public void useItem1(){
+    public void useItem(Item item1, Item item2){
         attacker.addDamage(item1.getDamage());
         attacker.addHealth(item1.getHealth());
         attacker.addPercent(item1.addPercentProtect());
@@ -55,20 +44,10 @@ public class BattleArea {
         defender.addHealth(item2.getHealth());
         defender.addPercent(item2.addPercentProtect());
 
-        printInfoItem1();
+        printInfoItem(item1, item2);
 
     }
-    public void useItem2(){
-        attacker.addDamage(item2.getDamage());
-        attacker.addHealth(item2.getHealth());
-        attacker.addPercent(item2.addPercentProtect());
 
-        defender.addPercent(item1.addPercentProtect());
-        defender.addHealth(item1.getHealth());
-
-        printInfoItem2();
-
-    }
     public Droid startFight() throws InterruptedException{
         do {
             prepareRound();
@@ -76,10 +55,10 @@ public class BattleArea {
             if(item1 != null){
                 if (currentRound == 5){
                     if(attacker == firstDroid){
-                        useItem1();
+                        useItem(item1, item2);
 
                     }else if(attacker == secondDroid){
-                        useItem2();
+                        useItem(item2, item1);
                     }
                 }
             }

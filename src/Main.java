@@ -1,4 +1,4 @@
-import Battle.DroidBattle;
+import battle.DroidBattle;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

@@ -1,6 +1,9 @@
 package com.droid;
 
+import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
+
 public class Droid {
     private final int id;
     private final String name;
@@ -77,7 +80,48 @@ public class Droid {
         return damage;
     }
 
+    public Droid createNewDroid(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("\nEnter name droid: ");
+        String name = in.nextLine();
+        System.out.print("\nEnter damage droid: ");
+        int damage = in.nextInt();
+        System.out.print("\nEnter health droid: ");
+        int health = in.nextInt();
+        System.out.print("\nEnter protect droid: ");
+        int protect = in.nextInt();
+        System.out.println("\nEnter droid id: ");
+        int id = in.nextInt();
+        Droid newDroid = new Droid(name, damage, health, protect, id);
 
+        return newDroid;
+    }
+
+    public Droid selectDroid(List<Droid> droids) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print(" Enter id droid: ");
+        return findDroid(in.nextInt(), droids);
+    }
+    private Droid findDroid(int id, List<Droid> droids) {
+
+        int idDroid;
+
+        for (Droid droid : droids) {
+            idDroid = droid.getId();
+            if (idDroid == id) {
+                return droid;
+            }
+        }
+        return null;
+    }
+
+
+    public void printListDroid(List<Droid> droids){
+        for(int i = 0; i < droids.size();i++){
+            System.out.println(droids.get(i)+" ");
+        }
+    }
 
     @Override
     public String toString(){

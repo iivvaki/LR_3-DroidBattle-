@@ -1,0 +1,133 @@
+Name: Riftmaker damage: 10 health: 30 protect: 0 
+Name: Crystal Cricketer damage: 5 health: 50 protect: -1 
+Name: Thornmail damage: 40 health: 10 protect: 1 
+Name: Demonic Embrace damage: 23 health: -15 protect: 1 
+Please enter number of item for
+ Enter item name: Please enter number of item for
+ Enter item name: ------------------------------------
+			Round 1
+Yasuo health damage: -24 protect damage: -5
+1. Yasuo: health = 126| protect = 45
+2. Zed: health = 100| protect = 50
+------------------------------------
+			Round 2
+Zed health damage: -2 protect damage: -0
+1. Yasuo: health = 126| protect = 45
+2. Zed: health = 98| protect = 50
+------------------------------------
+			Round 3
+Zed health damage: -6 protect damage: -1
+1. Yasuo: health = 126| protect = 45
+2. Zed: health = 92| protect = 49
+------------------------------------
+			Round 4
+Yasuo health damage: -16 protect damage: -3
+1. Yasuo: health = 110| protect = 42
+2. Zed: health = 92| protect = 49
+------------------------------------
+			Round 5
+Zed have boost damage:5, health: 50, protect: -1
+Damage now: 40 + 5, health: 142(+50)
+
+Yasuo have boost health:30, protect: 0
+Health now: 140(+30), protect percent: 20 + 0
+
+Yasuo health damage: -16 protect damage: -3
+1. Yasuo: health = 124| protect = 39
+2. Zed: health = 142| protect = 49
+------------------------------------
+			Round 6
+Yasuo health damage: -4 protect damage: -1
+1. Yasuo: health = 120| protect = 38
+2. Zed: health = 142| protect = 49
+------------------------------------
+			Round 7
+Yasuo health damage: -16 protect damage: -3
+1. Yasuo: health = 104| protect = 35
+2. Zed: health = 142| protect = 49
+------------------------------------
+			Round 8
+Zed health damage: -6 protect damage: -0
+1. Yasuo: health = 104| protect = 35
+2. Zed: health = 136| protect = 49
+------------------------------------
+			Round 9
+Zed health damage: -24 protect damage: -2
+1. Yasuo: health = 104| protect = 35
+2. Zed: health = 112| protect = 47
+------------------------------------
+			Round 10
+Zed health damage: -28 protect damage: -3
+1. Yasuo: health = 104| protect = 35
+2. Zed: health = 84| protect = 44
+------------------------------------
+			Round 11
+Zed health damage: -13 protect damage: -1
+1. Yasuo: health = 104| protect = 35
+2. Zed: health = 71| protect = 43
+------------------------------------
+			Round 12
+Zed health damage: -2 protect damage: -0
+1. Yasuo: health = 104| protect = 35
+2. Zed: health = 69| protect = 43
+------------------------------------
+			Round 13
+Yasuo health damage: -22 protect damage: -5
+1. Yasuo: health = 82| protect = 30
+2. Zed: health = 69| protect = 43
+------------------------------------
+			Round 14
+Zed health damage: -7 protect damage: -0
+1. Yasuo: health = 82| protect = 30
+2. Zed: health = 62| protect = 43
+------------------------------------
+			Round 15
+Yasuo health damage: -24 protect damage: -5
+1. Yasuo: health = 58| protect = 25
+2. Zed: health = 62| protect = 43
+------------------------------------
+			Round 16
+Yasuo health damage: -6 protect damage: -1
+1. Yasuo: health = 52| protect = 24
+2. Zed: health = 62| protect = 43
+------------------------------------
+			Round 17
+Yasuo health damage: -8 protect damage: -1
+1. Yasuo: health = 44| protect = 23
+2. Zed: health = 62| protect = 43
+------------------------------------
+			Round 18
+Yasuo health damage: -5 protect damage: -1
+1. Yasuo: health = 39| protect = 22
+2. Zed: health = 62| protect = 43
+------------------------------------
+			Round 19
+Zed health damage: -9 protect damage: -1
+1. Yasuo: health = 39| protect = 22
+2. Zed: health = 53| protect = 42
+------------------------------------
+			Round 20
+Zed health damage: -9 protect damage: -0
+1. Yasuo: health = 39| protect = 22
+2. Zed: health = 44| protect = 42
+------------------------------------
+			Round 21
+Yasuo health damage: -21 protect damage: -5
+1. Yasuo: health = 18| protect = 17
+2. Zed: health = 44| protect = 42
+------------------------------------
+			Round 22
+Zed health damage: -24 protect damage: -2
+1. Yasuo: health = 18| protect = 17
+2. Zed: health = 20| protect = 40
+------------------------------------
+			Round 23
+Yasuo health damage: -1 protect damage: -0
+1. Yasuo: health = 17| protect = 17
+2. Zed: health = 20| protect = 40
+------------------------------------
+			Round 24
+Yasuo health damage: -31 protect damage: -7
+1. Yasuo: health = 0| protect = 10
+2. Zed: health = 20| protect = 40
+The winner is Zed

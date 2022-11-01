@@ -1,8 +1,8 @@
 package com.droid;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import battle.DroidBattle;
+
+import java.io.*;
 
 public class PrintResult {
     public static String FILE = "result.txt";
@@ -24,5 +24,26 @@ public class PrintResult {
             System.out.println("Cant open: " + FILE);
         }
     }
+
+    public ByteArrayOutputStream StartPrintToFile(){
+        // для запису консолі у текстовий документ
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        OutputStream teeStream = new DroidBattle.TeeOutputStream(System.out, buffer);
+        System.setOut(new PrintStream(teeStream));
+
+        return buffer;
+    }
+    public void EndPrintToFile(ByteArrayOutputStream buffer){
+        // Збереження буферу в текстовий документ
+        try(OutputStream fileStream = new FileOutputStream("result.txt")){
+            buffer.writeTo(fileStream);
+            System.out.println(" \n\n The Game is successfully written in file! ");
+        } catch(IOException e){
+            System.out.println("error");
+        }
+    }
+
+
 }
+
 
